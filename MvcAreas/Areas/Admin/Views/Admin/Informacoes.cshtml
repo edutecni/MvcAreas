@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Informacoes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Informacoes</h2>
+<hr />
+<div class="container">
+    <div class="jumbotron">
+        <h3>Informações</h3>
+        <p>
+            Esta é a área do Admi - Informações
+        </p>
+    </div>
+    <p>Admin</p>
+    <p>Edutecni .net</p>
+    @*Html Helpers*@
+    @Html.ActionLink("Volta a Home Page", "Index", "Home", new { area = "" }) |
+    @Html.ActionLink("Acessa Produtos", "Index", "Produtos", new { area = "Produtos" }) |
+    @Html.ActionLink("Volta ao Admin", "Index", "Admin", new { area = "Admin" }) 
+</div>
